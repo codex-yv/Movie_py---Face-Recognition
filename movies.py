@@ -72,6 +72,7 @@ class MovieFinder:
             'Ponniyin Selvan 2 (Hindi Dubbed)': ['Vikram', 'Aishwarya Rai Bachchan', 'Karthi', 'Jayam Ravi'],
             'Dream Girl 2': ['Ayushmann Khurrana', 'Ananya Panday', 'Paresh Rawal', 'Rajpal Yadav', 'Manoj Joshi'],
             'Dream Girl': ['Ayushmann Khurrana', 'Nushrat Bharucha', 'Annu Kapoor', 'Vijay Raaz', 'Manoj Joshi'],
+            'Bhool Bhulaiyaa 3' :['Tripti Dimri', 'Kartik Aaryan', 'Vidya Balan', 'Madhuri Dixit','Vijay Raaz','Rajpal Yadav','Sanjay Mishra'],
             # 2022 Movies
             'Brahmāstra: Part One – Shiva': ['Ranbir Kapoor', 'Alia Bhatt', 'Amitabh Bachchan', 'Nagarjuna', 'Mouni Roy'],
             'The Kashmir Files': ['Darshan Kumar', 'Anupam Kher', 'Mithun Chakraborty', 'Pallavi Joshi'],
