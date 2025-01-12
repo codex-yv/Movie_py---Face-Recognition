@@ -77,7 +77,7 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                     distance = face_recognition.face_distance([known_image_encoding], unknown_encoding)[0]
 
                     if result[0] == True:
-                        if distance < 0.48:
+                        if distance < 0.45:
                             elapsed_time = time.time() - start_time  # Calculate elapsed time
                             print(Fore.GREEN + f'Face matched: {file_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print(Fore.YELLOW + f'Time taken to find match: {elapsed_time:.2f} seconds', Style.RESET_ALL)
