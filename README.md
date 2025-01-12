@@ -132,8 +132,16 @@ Now we are good to go for next step. *(make sure you have installed the dlib fil
   - **One step installation and One step to use**
 
 ## Version
+
+***[Note] : When ever you clone/download newer version replace your 1A folder with your older one ( when you cloned for time.) as it is now trained as per your uses!***
+
 ### 0.0.1
 - It's just the beginning
+
+### 0.0.2
+ - Added new movies (bollywood)
+ - Fixed UnboundLocal error
+ - Added new actor/actress
 
 ## Contributing
 
