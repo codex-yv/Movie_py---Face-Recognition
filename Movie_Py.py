@@ -150,7 +150,11 @@ def starter(image_get):
         if Global_result[0] == True:
             print(Fore.YELLOW +Back.CYAN + "Searching in :", Fore.RED+f'{search}',Style.RESET_ALL+'')
             with ThreadPoolExecutor(max_workers=4) as executor:
-                executor.submit(process_images, search, image_encoding, file_extensions)
+                try:
+                    executor.submit(process_images, search, image_encoding, file_extensions)
+                except UnboundLocalError:
+                    print(Fore.WHITE+Back.RED+Style.BRIGHT+'Use clear Image!',Style.RESET_ALL+'')
+                    break
         else:
             break
         
@@ -166,17 +170,23 @@ def starter(image_get):
             try:                    # Compute encoding for each image on-the-fly
                 unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
                 print(Fore.CYAN+Back.WHITE+"encoding successful: ", saves_path,Style.RESET_ALL+'')
-            except IndexError:
-                print(Fore.RED + Back.WHITE + "No face found in image:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
+            except (IndexError,UnboundLocalError):
+                print(Fore.RED + Back.WHITE + "No face found in image or face is not clear:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
 
             os.makedirs(os.path.dirname(saves_path), exist_ok=True)
 
             # Open a file in write mode ('w')
             with open(saves_path+'.txt' , "w") as file:
                 # Write text to the file
-                file.write(str(unknown_encoding))
+                try:
+                    file.write(str(unknown_encoding))
+                except UnboundLocalError:
+                    print(Fore.RED + Back.WHITE + "No face found in image or face is not clear:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
+                    print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
 
             print(Fore.GREEN+"Text has been written to", saves_path + '.txt',Style.RESET_ALL+'')
+        else:
+            print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
     else:
         pass
     
