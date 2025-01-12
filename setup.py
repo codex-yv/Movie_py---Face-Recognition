@@ -39,8 +39,8 @@ if cres==1:
             print("All modules installed successfully!")
 
     # List of modules to install
-    modules_to_install = ['tk-tools','requests','pillow','colorama',
-                          'random-number','random2','cmake==3.31.2','opencv-python',
+    modules_to_install = ['cmake==3.31.2','tk-tools','requests','pillow','colorama',
+                          'random-number','random2','opencv-python',
                           'customtkinter','face-recognition']
     install_modules(modules_to_install)
     print("\n\n________SETUP PART--1--Done________")
