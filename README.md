@@ -9,7 +9,7 @@
 ![Static Badge](https://img.shields.io/badge/Face_Recognition-yellow)
 </h3>
 
-### Last updated : `13-01-2025 10:20 PM (IST)`
+### Last updated : `13-01-2025 16:07 PM (IST)`
 
 ## Introduction to Movie_Py - Face Recognition
 
