@@ -107,19 +107,25 @@ def process_images(base_directory, known_image_encoding, file_extensions):
 # Load the known image and compute its encoding
 def starter(image_get):
     global Global_result, Global_add_new_img
+    
     image = face_recognition.load_image_file(image_get)
-    try:
-        image_encoding = face_recognition.face_encodings(image)[0]
-    except IndexError:
-        print(Fore.RED +Back.WHITE + "No face found in image",Style.RESET_ALL+'')
-    # Resize the image to 480px width
+    
     height, width = image.shape[:2]
     new_width = 480
     new_height = int((new_width / width) * height)
     image = cv2.resize(image, (new_width, new_height))
+    
+    image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    
+    try:
+        image_encoding = face_recognition.face_encodings(image_bgr)[0]
+    except IndexError:
+        print(Fore.RED +Back.WHITE + "No face found in image",Style.RESET_ALL+'')
+    # Resize the image to 480px width
+    
 
     # Convert the image from RGB to BGR for OpenCV
-    image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    # image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
     # Find the face locations in the known image and mark them
     face_location = face_recognition.face_locations(image)
