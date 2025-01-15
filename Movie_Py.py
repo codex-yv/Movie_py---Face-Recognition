@@ -62,7 +62,7 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                 
                 # Check if the file is a .txt file (for encodings)
                 if file_name.lower().endswith('.txt'):
-                    print(Fore.LIGHTBLUE_EX + f'Comparing encoding from {folder_path+file_name}...')
+                    print(Fore.LIGHTBLUE_EX + f'Comparing encoding from {folder_name}...')
                     file_name_without_ext = os.path.splitext(file_name)[0]
                     # Read the encoding from the text file
                     try:
@@ -79,7 +79,7 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                     if result[0] == True:
                         if distance < 0.45:
                             elapsed_time = time.time() - start_time  # Calculate elapsed time
-                            print(Fore.GREEN + f'Face matched: {file_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                            print(Fore.GREEN + f'Face matched: {folder_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print(Fore.YELLOW + f'Time taken to find match: {elapsed_time:.2f} seconds', Style.RESET_ALL)
                             print()
                             actors_found_list.append(file_name_without_ext)
@@ -89,11 +89,11 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                             print()
                             break
                         else:
-                            print(Fore.YELLOW + f"Match with low accuracy: {file_name}", Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                            print(Fore.YELLOW + f"Match with low accuracy: {folder_name}", Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print()
                             result = [False]
                     else:
-                        print(Fore.RED + f'Not matched: {file_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                        print(Fore.RED + f'Not matched: {folder_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                         print()
 
         if result[0] == True:
@@ -133,66 +133,68 @@ def starter(image_get):
         for facial_feature in facial_features:
             for point in face_landmarks[facial_feature]:
                 image_bgr = cv2.circle(image_bgr, point, 2, (255, 60, 170), 2)
+    if len(face_location)<2:
+        # Start the image display in a separate thread
+        display_thread = threading.Thread(target=display_image_with_landmarks, args=(image_bgr,))
+        display_thread.start()
 
-    # Start the image display in a separate thread
-    display_thread = threading.Thread(target=display_image_with_landmarks, args=(image_bgr,))
-    display_thread.start()
+        # Define image extensions globally
+        file_extensions = ['.txt']  # We're only looking for .txt files with encodings
+        max_workers = os.cpu_count() 
+        print(max_workers)
 
-    # Define image extensions globally
-    file_extensions = ['.txt']  # We're only looking for .txt files with encodings
-    max_workers = os.cpu_count() 
-    print(max_workers)
+        # Use multithreading to speed up face recognition across multiple encodings
+        Folder_list_root = ['1A','Bhojpuri1', 'Bollywood1', 'Hollywood1', 'Tollywoodd1', 'webseries_west1', 'webseries-ind1']
 
-    # Use multithreading to speed up face recognition across multiple encodings
-    Folder_list_root = ['1A','Bhojpuri1', 'Bollywood1', 'Hollywood1', 'Tollywoodd1', 'webseries_west1', 'webseries-ind1']
-
-    for search in Folder_list_root:
-        if Global_result[0] == True:
-            print(Fore.YELLOW +Back.CYAN + "Searching in :", Fore.RED+f'{search}',Style.RESET_ALL+'')
-            with ThreadPoolExecutor(max_workers=4) as executor:
-                try:
-                    executor.submit(process_images, search, image_encoding, file_extensions)
-                except UnboundLocalError:
-                    print(Fore.WHITE+Back.RED+Style.BRIGHT+'Use clear Image!',Style.RESET_ALL+'')
-                    break
-        else:
-            break
-        
-    if Global_add_new_img[0] == True:
-        print()
-        confirmation = input(Fore.YELLOW+"Do you want to add this image(y/n):")
-        if confirmation == 'y':
-            new_image_name = input("Give the Custom Name to image (don't add any extention) : ")
-            print(Style.RESET_ALL+'')
-            unknown_image = face_recognition.load_image_file(image_get)
-            file_name_without_ext = new_image_name
-            saves_path = os.path.join('1A','new data',file_name_without_ext)
-            try:                    # Compute encoding for each image on-the-fly
-                unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
-                print(Fore.CYAN+Back.WHITE+"encoding successful: ", saves_path,Style.RESET_ALL+'')
-            except (IndexError,UnboundLocalError):
-                print(Fore.RED + Back.WHITE + "No face found in image or face is not clear:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
-
-            os.makedirs(os.path.dirname(saves_path), exist_ok=True)
-
-            # Open a file in write mode ('w')
-            with open(saves_path+'.txt' , "w") as file:
-                # Write text to the file
-                try:
-                    file.write(str(unknown_encoding))
-                except UnboundLocalError:
+        for search in Folder_list_root:
+            if Global_result[0] == True:
+                print(Fore.YELLOW +Back.CYAN + "Searching in :", Fore.RED+f'{search}',Style.RESET_ALL+'')
+                with ThreadPoolExecutor(max_workers=4) as executor:
+                    try:
+                        executor.submit(process_images, search, image_encoding, file_extensions)
+                    except UnboundLocalError:
+                        print(Fore.WHITE+Back.RED+Style.BRIGHT+'Use clear Image!',Style.RESET_ALL+'')
+                        break
+            else:
+                break
+            
+        if Global_add_new_img[0] == True:
+            print()
+            confirmation = input(Fore.YELLOW+"Do you want to add this image(y/n):")
+            if confirmation == 'y':
+                new_image_name = input("Give the Custom Name to image (don't add any extention) : ")
+                print(Style.RESET_ALL+'')
+                unknown_image = face_recognition.load_image_file(image_get)
+                file_name_without_ext = new_image_name
+                saves_path = os.path.join('1A','new data',file_name_without_ext)
+                try:                    # Compute encoding for each image on-the-fly
+                    unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
+                    print(Fore.CYAN+Back.WHITE+"encoding successful: ", saves_path,Style.RESET_ALL+'')
+                except (IndexError,UnboundLocalError):
                     print(Fore.RED + Back.WHITE + "No face found in image or face is not clear:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
-                    print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
 
-            print(Fore.GREEN+"Text has been written to", saves_path + '.txt',Style.RESET_ALL+'')
+                os.makedirs(os.path.dirname(saves_path), exist_ok=True)
+
+                # Open a file in write mode ('w')
+                with open(saves_path+'.txt' , "w") as file:
+                    # Write text to the file
+                    try:
+                        file.write(str(unknown_encoding))
+                    except UnboundLocalError:
+                        print(Fore.RED + Back.WHITE + "No face found in image or face is not clear:", Fore.BLACK + saves_path, Style.RESET_ALL + '')
+                        print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
+
+                print(Fore.GREEN+"Text has been written to", saves_path + '.txt',Style.RESET_ALL+'')
+            else:
+                print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
         else:
-            print(Fore.WHITE+Back.RED+Style.BRIGHT+'Close the image to scan next image if given or for further actions!',Style.RESET_ALL+'')
-    else:
-        pass
-    
+            pass
+        
 
-    # Wait for the display thread to finish (optional, but good practice)
-    display_thread.join()
+        # Wait for the display thread to finish (optional, but good practice)
+        display_thread.join()
+    else:
+        print(Fore.RED +Back.WHITE + f"Found {len(face_location)} faces in a single photo> There should be one.",Style.RESET_ALL+'')
     
 
 

@@ -2,6 +2,7 @@
 class MovieFinder:
     def __init__(self):
         self.movies_bollywood = {
+            'Vicky Vidya Ka Woh Wala Video': ['Tripti Dimri', 'Rajkummar Rao','Mallika Sherawat','Vijay Raaz','Manjot Singh','Ashwini Kalsekar', 'Shehnaaz Gill','Archana Puran Singh','Mast Ali', 'Mukesh Tiwari'],
             'Dunki': ['Shah Rukh Khan', 'Katrina Kaif', 'Taapsee Pannu', 'Boman Irani'],
             'Fighter': ['Hrithik Roshan', 'Deepika Padukone', 'Anil Kapoor', 'Kriti Sanon'],
             'Rocky Aur Rani Ki Prem Kahani': ['Ranveer Singh', 'Alia Bhatt', 'Dharmendra', 'Shabana Azmi', 'Jaya Bachchan'],
@@ -155,6 +156,42 @@ class MovieFinder:
             'Aarya 2': ['Sushmita Sen', 'Chandrachur Singh', 'Vikas Kumar', 'Maya Sarao'],
             'The Girl on the Train (Hindi Remake)': ['Parineeti Chopra', 'Avinash Tiwary', 'Aditi Rao Hydari', 'Kirti Kulhari'],
             'Raat Baaki': ['Radhika Apte', 'Nawazuddin Siddiqui', 'Madhuri Dixit'],
+            'Sooryavanshi': ['Akshay Kumar', 'Katrina Kaif', 'Ajay Devgn', 'Ranveer Singh'],
+            'Bell Bottom': ['Akshay Kumar', 'Vaani Kapoor', 'Huma Qureshi', 'Lara Dutta'],
+            '83': ['Ranveer Singh', 'Deepika Padukone', 'Pankaj Tripathi', 'Saqib Saleem'],
+            'Shershaah': ['Sidharth Malhotra', 'Kiara Advani', 'Pradeep Rawat', 'Shiv Panditt'],
+            'Roohi': ['Janhvi Kapoor', 'Rajkummar Rao', 'Varun Sharma'],
+            'Indoo Ki Jawani': ['Kiara Advani', 'Aditya Seal', 'Mallika Dua'],
+            'Sadak 2': ['Sanjay Dutt', 'Alia Bhatt', 'Aditya Roy Kapur', 'Mahesh Bhatt'],
+            'Bunty Aur Babli 2': ['Saif Ali Khan', 'Rani Mukerji', 'Siddhant Chaturvedi', 'Sharvari Wagh'],
+            'Chhalaang': ['Rajkummar Rao', 'Nushrratt Bharuccha', 'Mohammed Zeeshan Ayyub'],
+            'Ludo': ['Abhishek Bachchan', 'Aditya Roy Kapur', 'Rohit Saraf', 'Sanya Malhotra'],
+            'The Power': ['Vidyut Jammwal', 'Shruti Haasan', 'Zoya Hussain'],
+            'Coolie No. 1': ['Varun Dhawan', 'Sara Ali Khan', 'Paresh Rawal', 'Jaaved Jaaferi'],
+            'Thalaivi': ['Kangana Ranaut', 'Arvind Swamy', 'Samuthirakani', 'Madhavan'],
+            'Toofaan': ['Farhan Akhtar', 'Mrunal Thakur', 'Paresh Rawal'],
+            'Sardar Udham': ['Vicky Kaushal', 'Banita Sandhu', 'Amol Parashar'],
+            # Lesser-known or independent film
+            'Pagglait': ['Sumeet Vyas', 'Aastha Gupta', 'Shruti Sharma', 'Sheeba Chaddha'],
+            'Axone': ['Chinmayi Sripada', 'Sayani Gupta', 'Vinay Pathak', 'Tenzing Dalha'],
+            'Kaamyaab': ['Sanjay Mishra', 'Deepak Dobriyal', 'Saurabh Shukla'],
+            'Choked': ['Saiyami Kher', 'Roshan Mathew', 'Amruta Subhash'],
+            'Serious Men': ['Nawazuddin Siddiqui', 'Nimrat Kaur', 'Aakshath Das'],
+            'The Disciple': ['Aditya Modak', 'Arun Dravid', 'Sumitra Bhave'],
+            'Ajeeb Daastaans': ['Fatima Sana Shaikh', 'Sanjay Kapoor', 'Nushrratt Bharuccha', 'Mohammad Iqbal Khan'],
+            'Yaara': ['Vidyut Jammwal', 'Shivdutta Nagesh', 'Amit Sial', 'Vijay Varma'],
+            'Jalsa': ['Vidya Balan', 'Shefali Shah', 'Manav Kaul', 'Rohini Hattangadi'],
+            'Saina': ['Parineeti Chopra', 'Manav Kaul', 'Meghna Malik', 'Karamvir Lamba'],
+            'The Tashkent Files': ['Shweta Basu Prasad', 'Naseeruddin Shah', 'Mithun Chakraborty', 'Pallavi Joshi'],
+            'Gulabo Sitabo': ['Amitabh Bachchan', 'Ayushmann Khurrana', 'Srishti Srivastava', 'Brijendra Kala'],
+            'Ankahi Kahaniya': ['Kunaal Roy Kapur', 'Zoya Hussain', 'Delnaaz Irani', 'Rinku Rajguru'],
+            'Meenakshi Sundareshwar': ['Abhimanyu Dassani', 'Pallavi Sharda', 'Nasirr Kazi', 'Radhika Madan'],
+            'House of Secrets: The Burari Deaths': ['Neelima Azim', 'Tanvi Azmi', 'Sakshi Tanwar'], # This is a web series but included for variety.
+            'Bob Biswas': ['Abhishek Bachchan', 'Chitrangda Singh', 'Parvin Dabas'],
+            'Mehandi Laga Ke Rakhna': ['Parambrata Chatterjee', 'Parna Sarkar', 'Ritwick Chakraborty'],
+            'Karnan': ['Dhanush', 'Rajisha Vijayan', 'Falah Abbas', 'Lal'],
+            'C U Soon': ['Fahadh Faasil', 'Darshana Rajendran', 'Roshan Mathew'],
+            'Malik': ['Fahadh Faasil', 'Nimisha Sajayan', 'Vinay Forrt'],
 
             # 2020 Movies
             'Tanhaji: The Unsung Warrior': ['Ajay Devgn', 'Saif Ali Khan', 'Kajol', 'Sharad Kelkar'],
@@ -563,7 +600,7 @@ class MovieFinder:
             'Anora': ['Mikey Madison', 'Paul Weissman', 'Yura Borisov', 'Lindsey Normington', 'Emily Weider'],
             'Furiosa: A Mad Max Saga': ['Anya Taylor-Joy', 'Chris Hemsworth', 'Tom Burke', 'Alya Browne'],
             'Gladiator II': ['Denzel Washington', 'Paul Mescal', 'Pedro Pascal', 'Connie Nielsen', 'Joseph Quinn'],
-            'Inside Out 2': ['Amy Poehler', 'Phyllis Smith', 'Maya Hawke', 'Kensington Tallman', 'Liza Lapira', 'Tony Hale'],
+            'Inside Out 2': ['Amy Poehler', 'Phyllis Smith', 'Maya Hawke', 'Kensington Tallman', 'Liza Lapira', 'Tony Hale']
         }
 
         self.web_series_hollywood = {
