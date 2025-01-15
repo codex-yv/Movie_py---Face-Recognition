@@ -553,7 +553,17 @@ class MovieFinder:
             'The Hunger Games: The Ballad of Songbirds and Snakes': ['Rachel Zegler', 'Tom Blyth', 'Hunter Schafer', 'Peter Dinklage', 'Jason Schwartzman'],
             'Fantastic Four (Reboot)': ['Unknown Cast', 'Unknown Cast', 'Unknown Cast', 'Unknown Cast'],
             'Captain America: New World Order': ['Anthony Mackie', 'Sebastian Stan', 'Harrison Ford', 'Shira Haas', 'Danny Ramirez'],
-            'The Flash 2': ['Ezra Miller', 'Michael Keaton', 'Ben Affleck', 'Sasha Calle', 'Michael Shannon']
+            'The Flash 2': ['Ezra Miller', 'Michael Keaton', 'Ben Affleck', 'Sasha Calle', 'Michael Shannon'],
+            'The Brutalist': ['Adrien Brody', 'Felicity Jones', 'Guy Pearce', 'Joe Alwyn', 'Raffey Cassidy'],
+            'Nosferatu': ['Lily-Rose Depp', 'Nicholas Hoult', 'Bill Skarsgård', 'Willem Dafoe', 'Aaron Taylor-Johnson'],
+            'Wicked': ['Ariana Grande', 'Cynthia Erivo', 'Jeff Goldblum', 'Michelle Yeoh', 'Jonathan Bailey'],
+            'Conclave': ['Ralph Fiennes', 'Stanley Tucci', 'John Lithgow', 'Lucian Msamati', 'Jacek Koman'],
+            'Carry-On': ['Taron Egerton', 'Jason Bateman', 'Sofia Carson', 'Danielle Deadwyler'],
+            'A Complete Unknown': ['Timothée Chalamet', 'Edward Norton', 'Elle Fanning', 'Monica Barbero'],
+            'Anora': ['Mikey Madison', 'Paul Weissman', 'Yura Borisov', 'Lindsey Normington', 'Emily Weider'],
+            'Furiosa: A Mad Max Saga': ['Anya Taylor-Joy', 'Chris Hemsworth', 'Tom Burke', 'Alya Browne'],
+            'Gladiator II': ['Denzel Washington', 'Paul Mescal', 'Pedro Pascal', 'Connie Nielsen', 'Joseph Quinn'],
+            'Inside Out 2': ['Amy Poehler', 'Phyllis Smith', 'Maya Hawke', 'Kensington Tallman', 'Liza Lapira', 'Tony Hale'],
         }
 
         self.web_series_hollywood = {
