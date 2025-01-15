@@ -79,7 +79,7 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                     if result[0] == True:
                         if distance < 0.45:
                             elapsed_time = time.time() - start_time  # Calculate elapsed time
-                            print(Fore.GREEN + f'Face matched: {folder_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                            print(Fore.GREEN + f'Face matched: {file_name_without_ext}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print(Fore.YELLOW + f'Time taken to find match: {elapsed_time:.2f} seconds', Style.RESET_ALL)
                             print()
                             actors_found_list.append(file_name_without_ext)
@@ -89,11 +89,11 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                             print()
                             break
                         else:
-                            print(Fore.YELLOW + f"Match with low accuracy: {folder_name}", Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                            print(Fore.YELLOW + f"Match with low accuracy: {file_name_without_ext}", Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print()
                             result = [False]
                     else:
-                        print(Fore.RED + f'Not matched: {folder_name}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
+                        print(Fore.RED + f'Not matched: {file_name_without_ext}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                         print()
 
         if result[0] == True:
