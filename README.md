@@ -124,6 +124,16 @@ Now we are good to go for next step. *(make sure you have installed the dlib fil
 
  <a href="https://github.com/codex-yv/Movie_py---Face-Recognition/issues">Click here to open issue tab</a><br>
 
+ - After you press done and selected image with facial landmark is not being poped up and encountering some open-cv related Errors then run the follwing code.
+
+
+```Python
+
+  pip uninstall opencv-python
+  pip uninstall opencv-contrib-python
+  pip install opencv-contrib-python
+
+```
 
  ## Future Developments
   - Currently the app work on a low data. As we only have some movies ranging from 2015 - 2024. So you may not find some actor/actress or movies. In future you will get 100% result.
