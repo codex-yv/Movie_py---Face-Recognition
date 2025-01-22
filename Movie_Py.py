@@ -23,9 +23,6 @@ def display_image_with_landmarks(image_bgr):
     cv2.waitKey(0)  # Wait until a key is pressed
     cv2.destroyAllWindows()  # Close the image window
 
-# Function to read a facial encoding from a txt file
-import numpy as np
-
 # Function to read and clean facial encoding from a txt file
 def read_encoding_from_txt(file_path):
     with open(file_path, 'r') as file:
@@ -75,9 +72,9 @@ def process_images(base_directory, known_image_encoding, file_extensions):
                     # Compare the known image encoding with the current unknown encoding
                     result = face_recognition.compare_faces([known_image_encoding], unknown_encoding)
                     distance = face_recognition.face_distance([known_image_encoding], unknown_encoding)[0]
-
+                    
                     if result[0] == True:
-                        if distance < 0.45:
+                        if distance < 0.44:
                             elapsed_time = time.time() - start_time  # Calculate elapsed time
                             print(Fore.GREEN + f'Face matched: {file_name_without_ext}', Fore.CYAN + f'{distance}', Style.RESET_ALL + '')
                             print(Fore.YELLOW + f'Time taken to find match: {elapsed_time:.2f} seconds', Style.RESET_ALL)
@@ -133,6 +130,7 @@ def starter(image_get):
         for facial_feature in facial_features:
             for point in face_landmarks[facial_feature]:
                 image_bgr = cv2.circle(image_bgr, point, 2, (255, 60, 170), 2)
+                
     if len(face_location)<2:
         # Start the image display in a separate thread
         display_thread = threading.Thread(target=display_image_with_landmarks, args=(image_bgr,))
