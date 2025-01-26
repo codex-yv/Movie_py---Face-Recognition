@@ -225,6 +225,299 @@ class MovieFinder:
             'Chhoti Si Baat': ['Rajkummar Rao', 'Kriti Sanon', 'Dinesh Rawat', 'Yashpal Sharma'],
             'Drishyam 2 (Hindi Dubbed)': ['Ajay Devgn', 'Tabu', 'Rajat Kapoor', 'Akshaye Khanna'],
             'Sushant Singh Rajput’s Untitled Film': ['Sushant Singh Rajput', 'Ayesha Raza Mishra', 'Shraddha Kapoor'],
+            'Shakeela': [
+                'Pankaj Tripathi', 'Richa Chadha', 'Rajeev Pillai', 'Kajol Chugh', 'Vicky Kadian', 
+                'Kafeel Jafri', 'Ahaana Kochar', 'Valerian Menezes', 'Ester Noronha', 'Sheeva Rana', 
+                'Saurabh Soni'
+            ],
+            'Sayonee': [
+                'Tanmay Ssingh', 'Musskan Sethi', 'Yograj Singh', 'Upasana Singh', 'Virender Commando', 
+                'Reshabh', 'Rahul Roy', 'Tanmmay Sachdeva', 'Irina Svecova'
+            ],
+            'Omprakash Zindabad': [
+                'Meraj Ahmed', 'Ravi Allahabadi', 'Seema Azmi', 'Prasoon Bajpeyi', 'Shweta Bhardwaj', 
+                'Arun Chaudhary', 'Jasmin Chitale', 'Madhav Chitale', 'Mahesh Chandra Deva', 'Zakir Hussain', 
+                'Jagdeep Jaffery', 'Sayeeda Jaffery', 'Jagdeep', 'Abhay Joshi', 'Khushboo Kamal', 
+                'Rajkumar Kanojia', 'Istiyak Khan', 'Kulbhushan Kharbanda', 'Soniya Mishra', 'Kamlesh Kumar Pande', 
+                'Jay Shanker Pandey', 'Om Puri', 'Ram Sethi', 'Sharad Raj Singh', 'Varun Tamta'
+            ],
+            'Teri Diwali Meri Christmas': [
+                'Hemavaishnave', 'Anurag Jha', 'Khushboo Moharkar', 'Shreeram Dongare', 'Harshita Awale', 
+                'Sakshi Panda'
+            ],
+            'Torbaaz': [
+                'Sanjay Dutt', 'Nargis Fakhri', 'Rahul Dev', 'Kuwaarjeet Chopraa', 'Priyanka Verma', 
+                'Rahul Mittra', 'Babrak Akbari', 'Gavie Chahal', 'Aishan Jawaid Malik', 'Hamid Shafi', 
+                'Mohammed Khairkhah', 'Rudra Soni', 'Rehan Shaik', 'Kanha', 'Tapajyoti Sarkar', 'Ballu Panchal', 
+                'Wahib Kapadia', 'Naisha Khanna', 'Rockey Raina', 'Raaj Singh Arora', 'Humayoon Shams Khan', 
+                'Muazzam Bhat', 'Yakub Sayyad', 'Jay Patel', 'Nira Suarez', 'Sascha Maximus', 'Preet Bhanushali', 
+                'Brian Nathan Siegal', 'Nivaan Modi', 'Lizaa Malik', 'Daljit Sean Singh', 'Soham Mahat', 
+                'Mohammed Haq Peer Khan', 'Aakarsh Bansal', 'Meet Mukhi', 'Rakshit Wahi', 'Vrutansh Upadhyay', 
+                'Yug Mahnot', 'Devansh Gantra', 'Aarav Gupta', 'Anil Khatana', 'Sneha Namanandi', 'Shafiq Khan', 
+                'Aashit Chatterjee', 'Laxman Singh Chundawat', 'Jayna Ruchandani', 'Diwakar Dhyani', 'Deepak Joshi', 
+                'Pratap Singh Verma', 'Chirag Vij', 'Gourav Popli', 'Lakshay Pallimar', 'Paresh Bramhbhatt', 
+                'Bisham Ahuja', 'Ajay Kumar Singh', 'Saurabh Chaddha', 'Bhuvan Azad', 'Firoz Pathan', 'Frank Free', 
+                'Ikhtsham', 'Shreyan', 'Chintoo Singh Wasir', 'Faiyaz Khan', 'Haider Ali Khan', 'Pratyaksh Panwar', 
+                'Zainab', 'Trilok Pandey', 'Prakhar Saxena', 'Shashi Bhushan Puri', 'Mohammed Saad', 'Pankaj Raina', 
+                'Fahim Fazli', 'Raaj Singh Arora', 'Priyanka Verma'
+            ],
+            'Indoo Ki Jawani': [
+                'Kiara Advani', 'Aditya Seal', 'Mallika Dua', 'Kimsa Sok', 'Rakesh Bedi', 'Deep Gautam', 
+                'Hrasif', 'Rajesh Jais', 'Shhivam Kakar', 'Raghav Raj Kakker', 'Alka Badola Kaushal', 'Iqbal Khan', 
+                'Mushtaq Khan', 'Arpit Mishra', 'Abhishek Mistry', 'Govind Pandey', 'Pharith Pat', 'Jitendra Singh Rajput', 
+                'Rajendra Sethi', 'Harsh Sharma', 'Amit Kb Sinha', 'Chittaranjan Tripathy', 'Dinuka Wijesinghe', 
+                'Achala Bose', 'Cricknowle', 'Ariyan Jibon', 'Bav Kong', 'Tapi Mishra', 'Umair Patel', 'Abhishek Singh', 
+                'Akshay Suri'
+            ],
+            'Durgamati: The Myth': [
+                'Bhumi Pednekar', 'Arshad Warsi', 'Samayera Khan', 'Mahie Gill', 'Jisshu Sengupta', 'Ananth Mahadevan', 
+                'Tanya Abrol', 'Dhanraj', 'Amit Behl', 'Prabhat Raghunandan', 'Pranjal Sharma', 'Farhan Qureshii', 
+                'Rahul Chelani', 'Muskaan Lalwani', 'Karan Kapadia', 'Sadanand Patil', 'Jyoti Shah', 'Swati Joshi', 
+                'Alok Gutch', 'Anil Sansare', 'Brij Bhushan Shukla', 'Chandan Vicky Rai', 'Bharat Singh Bamnele', 
+                'Nidhi Bhatt', 'Ajay Pal Singh', 'Vivek Savarikar', 'Ankit Pachori', 'Shubhankar Dixit', 'Rashmi Jain', 
+                'Shoeb Ali', 'Aftaf Khan', 'Narendra Singh', 'Amita Vishwakarma', 'Karan Kapadia', 'Arpit Srivastava', 
+                'Saeed Uddin Khan', 'Minhaz Khan', 'Vinod Varma', 'Venkat Maguluri', 'Shree Ram', 'Rahul Jadhav', 
+                'Richa Tiwari', 'Rupali Rana', 'Rahul Ningwal', 'Kavitha Baghel', 'Babu', 'Punit Singh', 'Akash Athawale', 
+                'Manoj Rawat', 'Farhan Qureshi', 'Harshit Sharma', 'Nagendra Sharma', 'Raj', 'Rahul Deshwari', 'Deepti Jai Prakash', 
+                'Ram', 'Kiran Sharma', 'Heera Bai Saini', 'Satish Baghela', 'Yatendra Atre', 'Krishan Kanash', 'Ada Singh', 
+                'Javed Khan', 'Paritosh Acharya', 'Sonam Pathak', 'Vasudeva Reddy', 'Vp Dixit', 'Sanziiv Chauhan', 
+                'Karan Singh Chauhan', 'Muskan Lalwani', 'Sangeeta Srivastava', 'Hariom Tiwari', 'Bharath Singh', 
+                'Uday Singh', 'Durga Prasad', 'Sachindra Shrivastav', 'Sanchi Dabadhe', 'Devendra Sharma', 'Ratan Tadey', 
+                'Ramkrishnan Dhakad', 'Shubendra Gupta', 'Ashok Sharma', 'Sushil Tandon', 'Prachi Sahu'
+            ],
+            'Darbaan': [
+                'Rasika Dugal', 'Sharib Hashmi', 'Sharad Kelkar', 'Mukesh Ramani', 'Flora Saini', 'Jitendra Vashishth'
+            ],
+            'Vinash Kaal': [
+                'Ruby Ahmed', 'Jai Akash', 'Rishabh Jain', 'Jeeva', 'Ajaz Khan', 'Mumait Khan', 'Nupur Mehta', 'Rakhi Sawant'
+            ],
+            'Chhalaang': [
+                'Rajkummar Rao', 'Nushrratt Bharuccha', 'Mohd. Zeeshan Ayyub', 'Saurabh Shukla', 'Satish Kaushik', 
+                'Ila Arun', 'Jatin Sarna', 'Baljinder Kaur', 'Naman Jain', 'Garima Shevi', 'Rajiv Gupta', 
+                'Suparna Marwah', 'Anil Chaudhary', 'Vishal Ajmaria', 'Akash', 'Anmol Bajaj', 'Anvita Bhargavva', 
+                'Tanishq Chaudhary', 'Ranjeet Chauhan', 'Akash Chawariya', 'Gourav Chiller', 'Virender Commando', 
+                'Ajay Dalal', 'Deedakk Dalal', 'Himanshu Dalal', 'Gowrav', 'Himanshi', 'Avni Jain', 'Poonam Jangra', 
+                'Dev Joon', 'Karthikay', 'Gaurav Khairwal', 'Amit Khatri', 'Ankit Khatri', 'Kunika', 'Prayrak Mehta', 
+                'Indu Mughal', 'Kirti Nain', 'Nakul', 'Naveen', 'Naveen Nishad', 'Noor', 'Aarnav Manish Parab', 'Hiren Patel', 
+                'Umair Patel', 'Prakhar Prakash', 'Kapil Raathe', 'Harsh Sharma', 'Deependra Singh', 'Hetashi Guru Singh', 
+                'Manasvi Soni', 'Venkatesh Vohra', 'Hani Yadav'
+            ],
+            'Suraj Pe Mangal Bhari': [
+                'Diljit Dosanjh', 'Manoj Bajpayee', 'Abhishek Banerjee', 'Vijay Raaz', 'Karishma Tanna', 
+                'Fatima Sana Shaikh', 'Neha Pendse', 'Annu Kapoor', 'Supriya Pilgaonkar', 'Manoj Pahwa', 
+                'Seema Pahwa', 'Manuj Sharma', 'Rohan Shankar', 'Neeraj Sood', 'Ujjawal Gauraha', 'Amit K. Sinha', 
+                'Yashraj Rawal', 'Ashish Sharma', 'Bhupendra Shahi', 'Vanshika Sharma'
+            ],
+            'Sadak 2': [
+                'Alia Bhatt', 'Priyanka Bose', 'Sanjay Dutt', 'Aditya Roy Kapoor', 'Pooja Bhatt', 
+                'Makrand Deshpande', 'Anil George', 'Jisshu Sengupta', 'Gulshan Grover', 'Mohan Kapur', 
+                'Akash Khurana', 'Akshay Anand', 'Javed Khan Amrohi', 'Digvijay Purohit', 'Chrisann Pereira', 
+                'Babrak Akbari', 'Jehangir Karkaria', 'Abdul Quadir Amin', 'John Gardener', 'Himanshu Bhatt'
+            ],
+            'Class of \'83': [
+                'Bobby Deol', 'Anup Soni', 'Joy Sengupta', 'Hitesh Bhojraj', 'Bhupendra Jadawat', 'Sameer Paranjape', 
+                'Ninad Mahajani', 'Prithvik Pratap', 'Vishwajeet Pradhan', 'Adesh Bhardwaj', 'Geetika Tyagi', 'Monika Panwar', 
+                'Ahmareen Anjum', 'Spruha Joshi', 'Annapurna Soni', 'Hansdev Sharma', 'Lekha Prajapati', 'Amit Thakkar', 
+                'Stavan Shinde', 'Ravi Singh', 'Akshay Tanksale', 'Jigar Mehta', 'Saurabh Gogate', 'Suhani Popli', 
+                'Janardan Kadam', 'Ashok Pathak', 'Aakash Mithbavkar', 'Abhijeet Sharma', 'Devas Dixit', 'Tamara Dsouza', 
+                'Rohit Tiwari', 'Veena Nair', 'Alok Bisht', 'Ajay Rawat', 'Agrani Neema', 'Anindya Gupta', 'Kaizan Khambatta', 
+                'Bhupendra Chouhan', 'Amit Raghuvanshi', 'Anand Alkunte', 'Sandeep Srivastava', 'Aditya Verma', 
+                'Manvendra Tripathi', 'Sharad Nayampalli', 'Ashish Chatterjee', 'Yashashree Chiplunkar', 'Abhishek Bhalerao', 
+                'Vinita J.', 'Seema Azmi', 'Akshay Jha', 'Ashutosh Shukla', 'Surjyasikha Das', 'Abhishek Jai Govind', 
+                'Sakshi Paranjape', 'Yogesh Patkar', 'Tushar Phulke', 'Bhushan Shimpi', 'Surbhi Jain', 'Kamal Kumar', 
+                'Sunil Pendharkar', 'Himanshu Sharma', 'Narendra Pahade', 'Mohd Amir', 'Chirag Bhanot', 'Atul Deshmukh', 
+                'Santu Hela', 'Shashwat Deep', 'Aditya Halbe', 'Yogesh Laxman More', 'Aslam R. Wadkar', 'Harshad Waghmare', 
+                'Nirmal Singh Das', 'Mukesh Jha', 'Akash Jhajot', 'Prajwal Mhaske', 'Hans Dev Sharma'
+            ],
+            'Gunjan Saxena: The Kargil Girl': [
+                'Janhvi Kapoor', 'Pankaj Tripathi', 'Angad Bedi', 'Manav Vij', 'Ayesha Raza Mishra', 'Vineet Kumar Singh', 
+                'Chandan Anand', 'Gautam Singh', 'Mannu Malik', 'Kapil Tilhari', 'Maneesh Verma', 'Sadhna Bajpai', 
+                'Barbie Rajput', 'Virendra Singh', 'Raunak Bhinder', 'Akkshay Gunaawat', 'Bhupesh Rai', 'Gulshan Pandey', 
+                'Varun Rastogi', 'Shushmit Bahuguna', 'Ashish Bhatt', 'Akash Dhar', 'Tejdeep Gill', 'Dishant Guliya', 
+                'Rachit Hooda', 'Yogendra Singh', 'Riva Arora', 'Shashie Vermaa', 'Poonam Labana', 'Aarav Shukla', 
+                'Maria Srishti Marcelline', 'Abhiroy Singh', 'Nadeem', 'Som Ganguly', 'Mohit K. Mehta', 'Rajesh Balwani', 
+                'Akanksha Kathi', 'Kirtika Buden', 'Sudha', 'Oshi Sahu', 'Akanksha Pandey', 'Muskaan', 'Swati', 'Aditi Gangwar', 
+                'Zura Gelashvili', 'Anuj Mishra', 'Anurag Sharma', 'Jairoop Jeevan', 'Omi Tiwari', 'Suraj Kumar', 'Hariom Anant', 
+                'Keshav Mittal', 'Tanush', 'Rachit Agarwal', 'Vicky Ahuja', 'ALi Khan AK', 'Abhi Brar', 'Grswkk', 'Sharik Khan', 
+                'Mukesh Khanna', 'Al Yasaha Naim', 'Mox Rathore', 'Mrinal Roy', 'Mohammad Sameer', 'Gurnaaz Mittu', 
+                'Rachana Parulkar'
+            ],
+            'Pareeksha': [
+                'Adil Hussain', 'Priyanka Bose', 'Shourya Deep', 'Shubham', 'Sanjay Suri', 'Manish Choudhary', 'Cricknowle', 
+                'Anant Kumar Gupta', 'Shakti Kumar', 'Parachi Mishra', 'Rohit Pandey', 'Sheena Rajpal', 'Manoj Sahay', 
+                'Saurav Sameer', 'Seema Singh', 'Shikha Swaroop'
+            ],
+            'Raat Akeli Hai': [
+                'Ashish Chhipa', 'Nawazuddin Siddiqui', 'Radhika Apte', 'Aditya Srivastav', 'Padmavati Rao', 'Nishant Dahiya', 
+                'Shivani Raghuvanshi', 'Tigmanshu Dhulia', 'Shriidhar Dubey', 'Riya Shukla', 'Shweta Tripathi', 'Ravi Sah', 
+                'Ila Arun', 'Baljinder Kaur', 'Gyanendra Tripathi', 'Khalid Tyabji', 'Danish Ali', 'Cricknowle', 
+                'Harjot Singh Dhaliwal', 'Ajitesh Gupta', 'Avinash Gupta', 'Abhay Joshi', 'Himanshi Justa', 'Zohab Khan', 
+                'Swanand Kirkire', 'Scott Milburn', 'Mukteshwara Ojha', 'Jeet Rajpurohit', 'Sanjay Sonu', 'Nitesh Kumar Tiwari', 
+                'Purnima Tiwari', 'Mihai Tuca'
+            ],
+            'Shakuntala Devi': [
+                'Vidya Balan', 'Adi Chugh', 'Sanya Malhotra', 'Jisshu Sengupta', 'Amit Sadh', 'Luca Calvani', 'Sheeba Chaddha', 
+                'Prakash Belawadi', 'Ipshita Chakraborty Singh', 'Spandan Chaturvedi', 'Purnendu Bhattacharya', 'Mark Davis', 
+                'Renuka Sharma', 'Ahan Nirban', 'Jiya Shah', 'Chahat Tewani', 'Priya Raina', 'Komal Chhabria', 'Barnaby Jago', 
+                'Claire Ashton', 'Ian Bailey', 'Santosh Banerjee', 'Nicholas Blatt', 'Saulius Cajauskas', 'Suki Chott', 
+                'Max Dowler', 'Jake Francis', 'Stephen Hulse', 'Elle Jones', 'Louis Mackenzie', 'Marianne March', 'Faizz Mir', 
+                'Amore Psiche', 'Bob Silver-Smith', 'Pranay Singh', 'Irina Svecova', 'Nisha Aaliya', 'Alex Bartram', 
+                'Toni Beard', 'Kiara Bhanushali', 'Raghav Binani', 'Paul Blackwell', 'Colin Blyth', 'Nishit Broker', 
+                'Barnaby Chambers', 'Darren Charman', 'Bradley Clarkson', 'Robert Dalgleish', 'Ishita Deshmukh', 'Dhruvin Doshi', 
+                'Guinevere Edwards', 'Vidyuth Gargi', 'Amitabh Gupta', 'Keith Hide', 'Ty Hurley', 'Martin Jishil', 'Nyla Masood', 
+                'Peter McPherson', 'Michael Meehan', 'Taraash Mehrotra', 'Araina Nand', "Roderick O'Grady", 'Hannah-Lee Osborn', 
+                'Mahesh Pillai', 'Phillip Roy', 'Vikram Sahu', 'Stephen Samson', 'Rheanne Tejani', 'Girish Thapar', 'Mahshid Torkan', 
+                'Reynu Verma', 'Jon Wennington', 'Jason Wilson', 'Jason Wilson'
+            ],
+            'Lootcase': [
+                'Kunal Kemmu', 'Rasika Dugal', 'Vijay Raaz', 'Ranvir Shorey', 'Gajraj Rao', 'Aryan Prajapati', 'Aakkash Dabhade', 
+                'Sumit Nijhawan', 'Nilesh Divekar', 'Shashi Ranjan', 'Atul Todankar', 'Ghanshyam Garg', 'Vijay Nikam', 'Manuj Sharma', 
+                'Siddhesh Purkar', 'Deepesh Sharma', 'Hemant Soni', 'Sada Yadav', 'Sonu Ronjhiya', 'Tariq Ahmed Khan', 
+                'Sachin Naik', 'Preeti Sharma', 'Jitendra Vashishth', 'Ankush Deshmukh', 'Narottam Bain', 'Deepak Ramesh', 
+                'Dinesh Lamba', 'Digvijay', 'Neelima Azim', 'Himanshu Sharma', 'Raj Shekhar Chandra', 'Anand Alkunte', 
+                'Sanjay Vichare', 'Nitin Bhajan', 'Avinash Kuri', 'Chandra Vashisht', 'Bhupendra Singh', 'Wilson Tiger', 
+                'Sachin Shetty', 'Ankush Bhai', 'Himanshu', 'Surender Thakur', 'Prasad Badwe', 'Ishaan Rai', 'Rajesh A Krishnan', 
+                'Dhawal Tandon', 'Surendra Belbansi', 'Devanand Gandharva', 'Bhopendra Belbansi', 'Saurab', 'Aaroosh Kohli', 
+                'Rutuja', 'Tripti', 'Ninad Kamat', 'Sujeet Kumar Sharma', 'Deepesh Sumitra Jagdish', 'Sachin Nayak'
+            ],
+            'Yaara': [
+                'Vidyut Jammwal', 'Amit Sadh', 'Mohommed Ali Shah', 'Kenny Basumatary', 'Shruti Haasan', 'Imran Hasnee', 
+                'Mujahid Siddiqui', 'Vijay Varma', 'Ankur Vikal', 'Deepak Singh Rawat', 'Pinaki Bandopadhyay', 'Samir Chandra', 
+                'Hemendra Dandotiya', 'Tigmanshu Dhulia', 'Shriidhar Dubey', 'Rajiv Gupta', 'Kartik', 'Shaurya Khare', 
+                'Swapnil kotriwar', 'Hemanth Mahaur', 'Nikshay Maurya', 'Rajiv Mishra', 'Sanjay Mishra', 'Shreya Narayan', 
+                'Mukesh Pachode', 'Dayashankar Pandey', 'Sushil Ranakoti', 'Amit Saad', 'Pankaz Singh Tanwar'
+            ],
+            'Dil Bechara': [
+                'Sushant Singh Rajput', 'Sanjana Sanghi', 'Sahil Vaid', 'Saswata Chatterjee', 'Swastika Mukherjee', 
+                'Sunit Tandon', 'Saif Ali Khan', 'Michael Muthu', 'Rajie Vijay Sarathi', 'Subbalakshmi', 'Franaita Jijana', 
+                'Durgesh Kumar', 'Salone Mehta', 'Anandita Sarkar', 'Nimisha Dean', 'Aftab', 'Ajuna', 'Sukhesh Arora', 
+                'Shaji Dheeraj', 'Driggu', 'Baharul Islam', 'Ritviq Joshi', 'Mr. Karan', 'Kartik Kathiriya', 'Akaash Khatri', 
+                'Saurav Khurana', 'Milind Mehta', 'Scott Milburn', 'Utsav Narula', 'Saurabh Pal', 'Jugal Popat', 'Aditya Prakash', 
+                'Karan Sharma Sanjeev', 'Deependra Singh', 'Samiran Singh', 'Manish Soni'
+            ],
+            'Virgin Bhanupriya': [
+                'Urvashi Rautela', 'Gautam Gulati', 'Rajiv Gupta', 'Archana Puran Singh', 'Niki Walia', 'Brijendra Kala', 
+                'Rumana Molla', 'Natasha Suri', 'Sumit Gulati', 'Chaitannya Kanhai', 'Pranav Verma', 'Ashutosh Semwal', 
+                'Amrit Arora', 'Ayush Gupta', 'Harveer Singh', 'Vikas Verma', 'Delnaaz Irani', 'Rajeev Nigam', 'Harshita Sohal', 
+                'Poonam Mathur', 'Vijaylaxmi Singh', 'Nilanjana', 'Shiva Kumar', 'Dimple Shaw Chauhan', 'Deepak Kripalani', 
+                'Babita Thakur', 'Kamlesh Mishra', 'Ranveer Singh', 'Indra Mansukhani', 'Mitali Patil', 'Anupam Gahoi', 
+                'Rohit Goyal', 'Puskar Kumar', 'Sapna Basoya', 'Diksha Thakur'
+            ],
+            'Gulabo Sitabo': [
+                'Amitabh Bachchan', 'Ayushmann Khurrana', 'Vijay Raaz', 'Brijendra Kala', 'Srishti Shrivastava', 
+                'Farrukh Jaffar', 'Tina Bhatia', 'Nalneesh Neel', 'Poornima Sharma', 'Jogi Mallang', 'Rehan Kidwai', 
+                'Ananya Dwivedi', 'Ujali Raj', 'Shri Prakash Bajpai', 'Behram Rana', 'Begum Almas Abdullah', 
+                'Nawab Jafar Mir Abdullah', 'Nawab Masood Abdullah', 'Ali Akbar', 'Lesh Akhi', 'Meraj Alam', 
+                'Alina Ali', 'Howeda Ali', 'Muniba Ali', 'Shireen Khalid Beg', 'Prashant Bhagia', 'Brijmohan', 
+                'Geetika Chakravarti', 'Saurabh Dasgupta', 'Munazza Faheem', 'Gangaram', 'Avinash Gupta', 'Nizam Husain', 
+                'Abbas Hussian', 'Fatima Hussian', 'Mahrua Jafar', 'Nishat Jafar', 'Mehru Jaffer', 'Trilochan S. Kalra', 
+                'Deepak Kanojiya', 'Kaushik', 'Ana Ali Khan', 'Babar Ali Khan', 'Zia Ahmed Khan', 'Mithil Lad', 'Azad Mishra', 
+                'Lajjawati Mishra', 'Lajwanti Mishra', 'Poonam Mishra', 'Devendra Modi', 'Nagpal.', 'Sitwat Ara Naqvi', 
+                'Naushad', 'Bhargav Oza', 'Yogesh Pal', 'Rajiv Pandey', 'Bhavish Patel', 'Abhinav Pundir', 'Ankur Rastogi', 
+                'Priyanshu Rathore', 'Ali Raza', 'Syed Mohd Rehan', 'Tamanna Rehan', 'Uzma Rehan', 'Adarsh Shukla', 
+                'Archana Shukla', 'Amrinder Singh', 'Pallavi Singh', 'Prisha Singh', 'Priyanka Singh', 'Shubham Singh', 
+                'Manish Soni', 'Ravish Srivastava', 'Abhishek Tiwari', 'Aditya Tiwari', 'Vibhuti Tomar', 'Sunil Kumar Verma', 
+                'Sandeep Yadav', 'Uday Vir Singh Yadav'
+            ],
+            "The Queen's Gambit": [
+                'Anya Taylor-Joy', 'Chloe Pirrie', 'Bill Camp', 'Marcin Dorocinski', 'Marielle Heller', 'Thomas Brodie-Sangster', 
+                'Moses Ingram', 'Harry Melling', 'Isla Johnston', 'Janina Elkin', 'Matthew Dennis Lewis', 'Russell Dennis Lewis', 
+                'Patrick Kennedy', 'Christiane Seidel', 'Jacob Fortune-Lloyd', 'Akemnji Ndifornyen', 'Annabeth Kelly', 
+                'Dolores Carbonari', 'Zoé Höche', 'Andruscha Hilscher', 'Iskander Madjitov', 'Rebecca Root', 'Clement Guyot', 
+                'Frederic Stromenger', 'Sophie McShera', 'Katherine Towe', 'Mia-Luisa Schrader', 'Laura Danne', 'Nina Herzberg', 
+                'Richard Waugh', 'Marian Meder', 'Frieda Raab', 'Sergio Di Zio', 'William Horberg', 'Lucy Ella von Scheele', 
+                'Emma Henker', 'Alva Schäfer', 'Marlene Leinemann', 'Matteo Vinogradov', 'Max Krause', 'Ryan Wichert', 
+                'Eloise Webb', 'Millie Brady', 'Rebecca Dyson-Smith', 'Felice', 'Frederik Schmid', 'Philipp Droste', 'Nikolai Jegorow', 
+                'Sam Gilroy', 'Daniel Brunet'
+            ],
+            'Ghoomketu': [
+                'Nawazuddin Siddiqui', 'Ragini Khanna', 'Richa Chadha', 'Anurag Kashyap', 'Deepika Amin', 'Raghubir Yadav', 
+                'Ila Arun', 'Swanand Kirkire', 'Nikkhil Advani', 'Frank M. Ahearn', 'Amitabh Bachchan', 'Debanjan Chatterjee', 
+                'Jayant Gadekar', 'Mahesh Ginnilaal', 'Lauren Gottlieb', 'Harsh Gupta', 'Brijendra Kala', 'Deepak Kalra', 
+                'Varun Kulkarni', 'R.C. Pathak', 'Huma Qureshi', 'Satya Ranjan', 'Ritu Sharma', 'Chitrangda Singh', 
+                'Ranveer Singh', 'Sonakshi Sinha', 'Rajesh Tomar', 'Priya Vishwanath'
+            ],
+            'Mrs. Serial Killer': [
+                'Jacqueline Fernandez', 'Manoj Bajpayee', 'Mohit Raina', 'Zayn Marie Khan', 'Darshan Jariwala', 'Deepak Arora', 
+                'Chanda Joshi', 'Kartik Soni', 'Anuradha Rajadhyaksha', 'Rajesh Mavani', 'Aparajita Bajaj', 'Nikhil Dave', 
+                'Nalini Anjana', 'Romanch Jadhav', 'Joydeep Mukherjee', 'Dhwani Acharya', 'Yusra Khan', 'Ayushmaan Jalan', 
+                'Rohit Vennam', 'Shivraj Walvekar', 'Nadeem Khan', 'Behram Rana', 'Kaushal Sahajagiti', 'Vipul Deshpande', 
+                'Poonam Pandey', 'Ariyan Jibon', 'Krishna Saajnani', 'Tawhid Rike Zaman'
+            ],
+            'The Pushkar Lodge': [
+                'Riney Aryaa', 'Anil Chahar', 'Yashvi Chhabra', 'Keshav Sachin Choudhary', 'Preeti Jhangiani', 'Pradeep Kabra', 
+                'Abhishek Mahendru', 'Rituraj Mohanty', 'Gulshan Pandey', 'Rajan Puri', 'Vishal Saini', 'Inder Kumar Suthar', 
+                'Vijay Suthar', 'Raghav Tiwari'
+            ],
+            'Angrezi Medium': [
+                'Irrfan Khan', 'Radhika Madan', 'Kareena Kapoor', 'Deepak Dobriyal', 'Dimple Kapadia', 'Ranvir Shorey', 
+                'Pankaj Tripathi', 'Kiku Sharda', 'Tillotama Shome', 'Zakir Hussain', 'Meghna Malik', 'Manu Rishi Chadha', 
+                'Poorvi Jain', 'Myrah Dandekar', 'Manish Gandhi', 'Kishore Bhatt', 'Mark Bennington', 'Connor Brabyn', 
+                'Thai Anh Bui', 'Ayesha Ali', 'Manoj Anand', 'Simon Anthony', 'Paolo Bafico', 'Des Barron', 'Henry Broom', 
+                'Sehajleen Chahal', 'Shahan Chaudhry', 'Charlotte Dunnico', 'Frank Free', 'Nisha George', 'Sonia Goswami', 
+                'Bikramjit Gurm', 'Chris Martin Hill', 'Pippa Hughes', 'Md Anan Islam', 'Op Jangid', 'Peter Jay', 'Naveen Jingar', 
+                'Elle Jones', 'Kinjal', 'Dimple Kumar', 'John Last', 'Helen Lauren', 'Matt Lavall', 'Richie Lawrie', 'Patrick Loh', 
+                'Swaylee Loughnane', 'Michael Lumb', 'Persephone Muse', 'Johnny Neal', 'Umair Patel', 'Lokendra Singh Rajpurohit', 
+                'Sanjana G. Sandhu', 'Vinita Satchit', 'Satkeer', 'Atul Sharma', 'Deependra Singh', 'Sunita', 'Sunil Tank', 
+                'Gillian Vassilliou', 'Ren Vassilliou', 'Ashok Vyas', 'Dave Watts', 'Winnie Wong', 'Elliott Wooster', 'Hani Yadav', 
+                'Rina Yadav', 'Himanshu Awasthi', 'Raj Awasti', 'Ankit Bisht', 'Dilyana Bouklieva', 'Dominic Canokema', 
+                'Wong Charlie', 'Soheila Clifford', 'Tiziana Coste', 'Daniel Eghan', 'John Glynn', 'John Harpley', 'Lee Nicholas Harris', 
+                'Nathan Haymer-Bates', 'Debra Hensman', 'Preeti Malhotra', 'Bharat Mistri', 'Iago Montgomery-Jarvis', 'Kuldeep N.', 
+                'Jamie Neagle', 'Serena Orsi-Dadomo', 'Lukas Parizek', 'Hiten Patel', 'Patrizia Petrassi', 'Gino Picciano', 
+                'Jim Quirke', 'Jessica Rhodes', 'Isabella Rosinante', 'Andreina Sambucetti', 'Daniela Villada Londoño', 'Jason Yip', 
+                'Nisha Zala'
+            ],
+            'Baaghi 3': [
+                'Tiger Shroff', 'Riteish Deshmukh', 'Shraddha Kapoor', 'Ankita Lokhande', 'Jameel Khoury', 'Vijay Varma', 
+                'Bhawani Singh Rathore', 'Jaideep Ahlawat', 'Shifuji Shaurya Bharadwaj', 'Danish Bhatt', 'Manav Gohil', 
+                'Pradeep Kabra', 'Slavisha Kajevski', 'Satish Kaushik', 'Ivan Kostadinov', 'Sunit Morarjee', 'Disha Patani', 
+                'Virendra Saxena', 'Amit Sharma', 'Jackie Shroff', 'Shriswara', 'Navdeep Tomar', 'Yash Bhojwani', 'Katarina Orlandic', 
+                'Ayaan Zubair Rahmani', 'Shubham Daulani', 'Angad Khan', 'Mukesh Khanna', 'Anand Krishnan', 'Chandramogli Madem', 
+                'Khayk Morgan', 'Hitesh rathod', 'Deependra Singh'
+            ],
+            'Dheet Patangey': [
+                'Muntazir Ahmad', 'Ali Murad', 'Priya Banerjee', 'Lakshya Handa', 'Janu Kumar', 'Shivin Narang', 'Hardik Sangani', 
+                'Chandan Roy Sanyal', 'Tillotama Shome', 'Durg Singh Thakur'
+            ],
+            'Kehta Hai Yeh Dil': [
+                'Ranbeeir Kalsi', 'Sharvani Sahay', 'Elena Tuteja', 'Matin Khan', 'Naresh Narmila', 'Akash Singh', 'Krishna Chaurasiya', 
+                'Kalpesh Dutt', 'Jimmy', 'Krishna', 'Raj Kumar', 'Vimal Kumawat', 'Baby Ladoo', 'Pragya', 'Archan Sahoo', 
+                'Pratap Sharma', 'Suresh Sharma', 'Rachna Shrivastava'
+            ],
+            'Thappad': [
+                'Taapsee Pannu', 'Pavail Gulati', 'Kumud Mishra', 'Ratna Pathak Shah', 'Maya Sarao', 'Geetika Vidya Ohlyan', 
+                'Tanvi Azmi', 'Naila Grrewal', 'Dia Mirza', 'Ram Kapoor', 'Ankur Rathee', 'Manav Kaul', 'Gracy Goswami', 
+                'Santanu Ghatak', 'Harssh Singh', 'Sushil Dahiya', 'Rohan Khurana', 'Siddhant Karnick', 'Nidhi Uttam', 'Anil Rastogi', 
+                'Purnendu Bhattacharya', 'Bhavesh Babani', 'Cherry', 'Manju Gupta', 'Trilochan S. Kalra', 'Rakesh Kumar', 'Massi', 
+                'Phlorick', 'Reapstar', 'Prisha Rohila', 'Deependra Singh', 'Varun Tamta', 'Shivani Tripathi', 'Sandeep Yadav'
+            ],
+            'O Pushpa I Hate Tears': [
+                'Krushna Abhishek', 'Karthik Jayaram', 'Arjumman Mughal', 'Anusmriti Sarkar', 'Pradeep Kabra', 'Jimmy Moses', 
+                'Akhilendra Mishra', 'Anang Desai', 'Ratnakar Mavilach'
+            ],
+            'Doordarshan': [
+                'Manu Rishi Chadha', 'Mahie Gill', 'Dolly Ahluwalia', 'Shardul Rana', 'Archita Sharma', 'Rajesh Sharma', 
+                'Supriya Shukla', 'Mehak Manwani', 'Sumit Gulati', 'Aditya Kumar', 'Manoj Bakshi', 'Naresh Gosain', 'Ena Vohra', 
+                'Ravi Dudeja', 'Aditya Kumar', 'Ajay Singh', 'Tilakraj Singh'
+            ],
+            'Gul Makai': [
+                'Reem Shaikh', 'Divya Dutta', 'Atul Kulkarni', 'Om Puri', 'Abhimanyu Singh', 'Arif Zakaria', 'Mukesh Rishi', 
+                'Kamlesh Gill', 'Manoj Maran', 'Sharib Hashmi', 'Chandra Shekhar Dutta', 'Prateek Parmar', 'Harishankar Pal', 
+                'Ganesh Yadav', 'Ravi Kale', 'Pankaj Tripathi', 'Amjad Khan', 'Ajay Chourey', 'Khushmeet Gill', 'Dhwij Mehta', 
+                'Aasokaa', 'Tushar Acharya', 'Shahbaz Baweja', 'Rajesh Bonik', 'Ashish Chaturvedi', 'Imran Hasnee', 'Salman Jaffery', 
+                'Hesh Jain', 'Rizwan Kalshyan', 'Leena Kapoor', 'Irfan Razaa Khan', 'Sayyed Irshad Ali Khan', 'Shadab Rahbar Khan', 
+                'Umar Raza Khan', 'Rohit Kp', 'Devesh Kumar', 'Siddharth Nirala', 'Bipin Panigrahi', 'Pardeep', 'Afaq Qureshi', 
+                'Shubhansh Rao', 'Rajeev Rawat', 'Gajender Singh'
+            ],
+            
+            'Chhapaak': ['Deepika Padukone', 'Vikrant Massey', 'Madhurjeet Sarghi', 'Payal Nair', 'Vaibhavi Upadhyaya', 'Geeta Agrawal Sharma', 'Vishal Dahiya', 'Ankit Bisht', 'Satish Sharma', 'Anand Tiwari', 'Ipshita Chakraborty Singh', 'Devas Dixit', 'Delzad Hiwale', 'Sanjay Gurbaxani', 'Annapurna Soni', 'Suhani Popli', 'Chittaranjan Tripathy', 'Sharvari Deshpande', 'Pallavi Batra', 'Micky Makhija', 'Monika Sharma', 'Bhasha Sumbli', 'Srishti Wadhwani', 'Gita Guha', 'Sakshi Benipuri', 'Ashish Kumar', 'Sunny Gill Ambersariya', 'Baharul Islam', 'Anjana Om Kashyap', 'TejInder Singh Khamkha', 'Tahura Mansuri', 'Himanshu Sharma', 'Jaspal Sharma', 'Naman Sharma'],
+            'Pyaar Banam Khap Panchayat': ['Manoj Pandit', 'Manoj Bakshi'],
+            'Tanhaji: The Unsung Warrior': ['Ajay Devgn', 'Saif Ali Khan', 'Sharad Kelkar', 'Kajol', 'Padmavati Rao', 'Shashank Shende', 'Neha Sharma', 'Vipul Gupta', 'Devdutta Nage', 'Ajinkya Deo', 'Kailash Waghmare', 'Luke Kenny', 'Yuri Suri', 'Aamir Yaseen', 'Nissar Khan', 'Rajveer Ankur Singh', 'Jagannath Nivangune', 'Trishla Patel', 'Bhagyashree Nhalve', 'Hardik Sangani', 'Angad Mhaskar', 'Shivraj Walvekar', 'Nikhat Khan', 'Arush Nand', 'Antima Sharma', 'Elakshi A Gupta', 'Niranjan Jadhao', 'Prasanna Ketkar', 'Ramchandran Singh', 'Harsh Sharma', 'Devendra Gaikwad', 'Myrah Dandekar', 'Ramazan Bulut', 'Tufail Khan', 'Mridul Kumar Sinha', 'Sandeep Juwatkar', 'Dhananjay Singh', 'Ajay Kumar Nain', 'Dhairya Gholap', 'Rajesh Aher', 'Nitin Bansode', 'Cricknowle', 'Swapnil Dhondge', 'Nitesh Kalbande', 'Tareeq Ahmed Khan', 'Rishabh Khanna', 'Naresh Malik', 'Trisha Patil', 'Kiran Rathod', 'Tufail Khan Rigoo', 'Ankit Saxena', 'Harsh Sharma', 'Rajat Sharma', 'Dilbagh Singh'],
+            'Darbar': ['Rajinikanth', 'Nayanthara', 'Nivetha Thomas', 'Suniel Shetty', 'Yogi Babu', 'Gautam Singh Rajput', 'Prateik Patil Babbar', 'Nawab Shah', 'Dalip Tahil', 'Jatin Sarna', 'Sriman', 'Guru Bhullar', 'Shamata Anchan', 'Mirabel Stuart', 'David P Perlmutter', 'Tanmay Nagar', 'Yograj Singh', 'Jeeva Subramanian', 'Surender Thakur', 'Adithya Shivpink', 'Mithun Purandare', 'Wong Charlie', 'Nii Ashiboye', 'David Gris', 'Emerson Kandu', 'Ohu Leramoh', 'Emanuel Offu', 'Kingsley Onyia', 'Robin Sutherland', 'Aasif Khan', 'Ravi Kishan', 'Vikrant Koul', 'Abhinav', 'Ajay', 'Nazar Ali', 'Deepak Anand', 'Pankaj Anand', 'Ankit', 'Anmol', 'Tamanna Arora', 'Shiv Aryan', 'Kartik Baba', 'Pradeep Bajpai', 'Anil B. Balecha', 'Ashok Kumar Beniwal', 'Bharat', 'Asif Bhatt', 'Narinder Bhutani', 'Sandeep Bose', 'Bunty', 'Trilok Chandra', 'Jameel Choudhary', 'Parimal Desai', 'Dheeraj Dev', 'Kirti Dharma', 'Dasy Dolly', 'Anaya Dubey', 'Saroj Garewal', 'Sumit Giri', 'Shreya Gupto', 'Himanshu', 'Yusuf Hussain', 'Krishan Jaat', 'Sanjiv Kumar Jain', 'Anamika Jaiswal', 'Jasmine', 'Ariyan Jibon', 'Rajive Joshi', 'Maghan Kalbag', 'Deepak Kalra', 'Rajni Kewat', 'Armaan Khan', 'Guljar Khan', 'Sahil Khan', 'Krishna Kotian', 'Manasvi Kottachi', 'Deepak Kripalani', 'Kamal Krishna', 'Gopala Krishnan', 'Sanjeev Kumar', 'Kapil Singh Lalwani', 'Amit Lekhwani', 'Swaylee Loughnane', 'Micky Makhija', 'Kamaal Malik', 'Indra Mansukhani', 'Taiyaba Mansuri', 'Kirti Mehta', 'Arsh Merchant', 'Mithun', 'Basant Modi', 'Gauz Mohammed', 'Dinesh Mohan', 'Munir', 'Sapna Nahar', 'Sundeep Nair', 'Soundariya Nanjundan', 'Nikhil', 'Nishant', 'Priyadarshi Nishant', 'Omi', 'Sharon Pandey', 'Pankaj', 'Rajesh Pasi', 'Piyush', 'Navin Prabhakar', 'Prabhakaran', 'Praveen', 'Pream', 'Cassandra Rachel Premji', 'Priyanka', 'Shah Alam Qureshi', 'Sanjay Raghavan', 'Ravi Kumar Ram', 'C. Ranganathan', 'Nitin Rao', 'Divya Ratan', 'Darshankumar Raval', 'Apollo Ravi', 'Manoj Ravi', 'Sanjay Roy', 'Samanta', 'Anitha Sampath', 'Goutham Samrat', 'Jain Sanjiv', 'Himanshu Sharma', 'Rishabh Raj Sharma', 'Sparsh Sharma', 'Shroon', 'Rana Ratan Singh', 'Simran Sivakumar', 'Anoop Soni', 'Samrat Soni', 'Prakash Sudarshan', 'Sangeetha Sundharam', 'Persanna Sushmita', 'Chandraprakash Thakur', 'Ranesh Thiagarajan', 'Mukesh Tiwari', 'Isshu Tomar', 'Dipak Varma', 'Vedant', 'Vikash', 'Veer Vikram', 'Virebder', 'Asha Vyas', 'Birender Yadav', 'Birendra Yadav', 'Nayar Zafri', 'Or Zafri', 'David Bailie', 'Salman Jaffery', 'Huw Ab Jones', 'Ajit Shidhaye'],
+            'Sab Kushal Mangal': ['Akshaye Khanna', 'Priyaank Sharma', 'Riva Kishan', 'Kaushik Satish', 'Satish Kaushik', 'Supriya Pathak', 'Rakesh Bedi', 'Mrunal Jain', 'Swati Semwal', 'Jaya Ojha', 'Sunita Shirole', 'Yuvika Chaudhary', 'Ishtiyak Khan', 'Apurva Nemlekar', 'Shriya Saran', 'Nalneesh Neel', 'Mukesh S. Bhatt', 'Aditya Tiwari', 'Manish Choudhary', 'Mohammad Nayem', 'Sameer Patra', 'Anand Sharma'],
+            'Bhangra Paa Le': ['Sunny Kaushal', 'Rukshar Dhillon', 'Shriya Pilgaonkar', 'Parmeet Sethi', 'Samir Soni', 'Chaitnya Sharma', 'Sheeba Chaddha', 'Jayati Bhatia', 'Sammy Jonas Heaney', 'Akarsh Khurana', 'Kamlesh Gill', 'Sarthak Kakar', 'Swasti Kapur', 'Mark Bennington', 'Asha Arora', 'Radhika Bangia', 'Gaurav Beniwal', 'Avni Bhatia', 'Mahabir Bhullar', 'Govind Bisht', 'Gurjeet Singh Channi', 'Anasua Chowdhury', 'Sandeep Chugh', 'Nitin Goyal', 'Naila Grrewal', 'Ana Ilma', 'Emiko Ishii', 'Goral Joshi', 'Tvisha Joshi', 'Gourav Kamboj', 'Seema Kaushal', 'Balraj Singh Khehra', 'Jashn Kohli', 'Nikhil Basant Kumar', 'Shereoshi Kumar', 'Mohit Mathur', 'Mohit Mathur', 'Minto', 'Priyanka Mitra', 'Chandar Mohan', 'Varun Narang', 'Rishi Panchal', 'Ravinder Pawar', 'Rohan Prasad', 'Sarvi Rattan', 'Tejas Ravishankar', 'Sunit Razdan', 'Priyam Saha', 'Ashok Salaria', 'Swairaj Sandhu', 'Gautam Sharma', 'Sujeet Kumar Sharma', 'Harnimrat Singh Sidhu', 'Babalbir Singh', 'Harpal Singh', 'Kulwinder Singh', 'Sahaj Singh', 'Aklima Uddin', 'Anjali Verma', 'Yorgo Glynatsis', 'Chandni Srivastava'],
+            'English Ki Taay Taay Fisss ...': ['Leysan Karimova', 'Chandan Kashyap', 'Divyaraj Vikramsinh Bihola', 'Manoj Joshi', 'Mushtaq Khan', 'Viju Khote', 'Rohit Kumar', 'Avantika Mishra', 'Govind Namdeo', 'Rajpal Naurang Yadav', 'Sunil Pal', 'Rahul', 'Yuvradnyee'],
+            'Shimla Mirchi': ['Hema Malini', 'Rajkummar Rao', 'Rakul Preet Singh', 'Shakti Kapoor', 'Kanwaljeet Singh', 'Tarun Wadhwa', 'Kamlesh Gill', 'Neeta Mohindra', 'Kiran Juneja', 'Priya Raina', 'Jagrati Sethia', 'Zoya Khan', 'Kamal Sharma', 'Subhash Sharma', 'Akhilesh Dogra', 'Dharmendra', 'Ramesh Sippy', 'Manoj Mehra', 'Sooraj Ohri', 'Sohom Pramanick', 'Tawhid Rike Zaman'],
 
             # 2019 Movies
             'War': ['Hrithik Roshan', 'Tiger Shroff', 'Vaani Kapoor', 'Anupriya Goenka'],
